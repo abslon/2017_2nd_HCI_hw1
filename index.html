@@ -32,10 +32,29 @@
   </div>
 </nav>
 
-<div id="mainimg" class="jumbotron text-center" style="height:720px; padding-top: 90px; padding-bottom:70px; padding-right:80px; overflow:auto">
-  <h1 style="font-size:115px; font-weight:100">2017년 정기 고연전</h1> 
-  <p style="font-size:45px; font-weight:100">필승! 전승! 압승! 올해의 승리도 우리 것이다!</p> 
+<div id="mainimg" class="jumbotron text-center" style="overflow: hidden;">
+  <h1 id="m1" style="font-weight:100">2017년 정기 고연전</h1> 
+  <p id="m2" style="font-weight:100">필승! 전승! 압승! 올해의 승리도 우리 것이다!</p> 
 </div>
+
+<script>
+  var mainImg = document.getElementById("mainimg");
+  var curWidth = parseInt(mainImg.clientWidth);
+  var curHeight = (720 * curWidth / 1920);
+  mainImg.style.height = curHeight+"px";
+  alert(curWidth);
+  alert(curHeight);
+  mainImg.style.backgroundSize = (2770 / 1920 * curWidth)+"px "+curHeight+"px";
+  alert((2770 / 1920 * curWidth)+"px"+" "+curHeight+"px");
+  mainImg.style.padding = (100 / 720 * curHeight)+"px "+(65 / 1920 * curWidth)+"px "
+      +(385 / 720 * curHeight)+"px "+ (65 / 1920 * curWidth)+"px";
+  alert(mainImg.style.padding);
+
+  var main1 = document.getElementById("m1");
+  main1.style.fontSize = (115 / 1920 * curWidth) + "px";
+  var main2 = document.getElementById("m2");
+  main2.style.fontSize = (45 / 1920 * curWidth) + "px";
+</script>
 
 <div style="margin: 0 auto; max-width:1350px;">
   <div id="about" class="container-fluid">
@@ -199,7 +218,7 @@
         </table>
         <p style="font-size:17px;">일정을 확인하시고 적극 참여하시어 고대인으로서의 자부심을 확인하시기 바랍니다.</p>
         <br><button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c2">현재 스코어 보기</button> 
-        <button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c3">지난 전적 보기</button>
+        <button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c3">지난 전적 보기</button><br>
       </div>
       <div id="c2" class="col-sm-12 collapse">
         <br>
@@ -215,18 +234,18 @@
       </div>
     </div>
     <div class="row">   
-      <div id="c3" class="col-sm-12 collapse" style="margin:auto; float:none">
+      <div id="c3" class="col-sm-12 collapse">
         <br>
         <table class="table table-hover" style="text-align:center;">
           <tbody><tr>
           <th rowspan="2">연도</th>
-          <th colspan="2">축구 스코어</th>
-          <th colspan="2">농구 스코어</th>
-          <th colspan="2">야구 스코어</th>
-          <th colspan="2">빙구 스코어</th>
-          <th colspan="2">럭비 스코어</th>
-          <th colspan="3">종합 전적</th>
-          <th rowspan="2">승리팀</th>
+          <th colspan="2">축구</th>
+          <th colspan="2">농구</th>
+          <th colspan="2">야구</th>
+          <th colspan="2">빙구</th>
+          <th colspan="2">럭비</th>
+          <th colspan="3">종합</th>
+          <th rowspan="2">승리</th>
           </tr>
           <tr>
           <td>고려</td>
@@ -258,7 +277,7 @@
           <td>1</td>
           <td>2</td>
           <td>2</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1966</td>
@@ -292,7 +311,7 @@
           <td>4</td>
           <td>1</td>
           <td>0</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1968</td>
@@ -309,7 +328,7 @@
           <td>4</td>
           <td>1</td>
           <td>0</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1969</td>
@@ -367,7 +386,7 @@
           <td>4</td>
           <td>0</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1974</td>
@@ -384,7 +403,7 @@
           <td>4</td>
           <td>1</td>
           <td>0</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1975</td>
@@ -409,7 +428,7 @@
           <td>1</td>
           <td>2</td>
           <td>2</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1977</td>
@@ -426,7 +445,7 @@
           <td>1</td>
           <td>2</td>
           <td>2</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1978</td>
@@ -443,7 +462,7 @@
           <td>2</td>
           <td>0</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1979</td>
@@ -481,7 +500,7 @@
           <td>1</td>
           <td>1</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1982</td>
@@ -498,7 +517,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1983</td>
@@ -519,7 +538,7 @@
           <td>2</td>
           <td>0</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1985</td>
@@ -536,7 +555,7 @@
           <td>1</td>
           <td>0</td>
           <td>4</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1986</td>
@@ -552,7 +571,7 @@
           <td>1</td>
           <td>2</td>
           <td>2</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1987</td>
@@ -569,7 +588,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1988</td>
@@ -586,7 +605,7 @@
           <td>1</td>
           <td>0</td>
           <td>4</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1989</td>
@@ -603,7 +622,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1990</td>
@@ -620,7 +639,7 @@
           <td>3</td>
           <td>1</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1991</td>
@@ -637,7 +656,7 @@
           <td>1</td>
           <td>0</td>
           <td>4</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1992</td>
@@ -654,7 +673,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1993</td>
@@ -671,7 +690,7 @@
           <td>2</td>
           <td>0</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1994</td>
@@ -688,7 +707,7 @@
           <td>3</td>
           <td>1</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1995</td>
@@ -705,7 +724,7 @@
           <td>3</td>
           <td>1</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>1996</td>
@@ -726,7 +745,7 @@
           <td>1</td>
           <td>1</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1998</td>
@@ -743,7 +762,7 @@
           <td>2</td>
           <td>0</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>1999</td>
@@ -759,7 +778,7 @@
           <td>0</td>
           <td>2</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>2000</td>
@@ -793,7 +812,7 @@
           <td>1</td>
           <td>1</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>2002</td>
@@ -810,7 +829,7 @@
           <td>3</td>
           <td>1</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2003</td>
@@ -844,7 +863,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2005</td>
@@ -861,7 +880,7 @@
           <td>1</td>
           <td>0</td>
           <td>4</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>2006</td>
@@ -894,7 +913,7 @@
           <td>3</td>
           <td>1</td>
           <td>0</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2008</td>
@@ -911,7 +930,7 @@
           <td>1</td>
           <td>1</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>2009</td>
@@ -945,7 +964,7 @@
           <td>1</td>
           <td>1</td>
           <td>3</td>
-          <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+          <td bgcolor="royalblue"><font color="white">연세</font></td>
           </tr>
           <tr>
           <td>2011</td>
@@ -962,7 +981,7 @@
           <td>3</td>
           <td>1</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2012</td>
@@ -979,7 +998,7 @@
           <td>3</td>
           <td>0</td>
           <td>2</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2013</td>
@@ -1013,7 +1032,7 @@
           <td>5</td>
           <td>0</td>
           <td>0</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <td>2015</td>
@@ -1047,7 +1066,7 @@
           <td>2</td>
           <td>2</td>
           <td>1</td>
-          <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+          <td bgcolor="crimson"><font color="white">고려</font></td>
           </tr>
           <tr>
           <th></th>
@@ -1063,15 +1082,25 @@
           </tr>
           <tr>
           <td><b>우세</b></td>
-          <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
-          <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
-          <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
-          <td colspan="2" bgcolor="royalblue"><font color="white">연세 우세</font></td>
-          <td colspan="2" bgcolor="royalblue"><font color="white">연세 우세</font></td>
-          <td colspan="3" bgcolor="crimson"><font color="white">고려 우세</font></td>
+          <td colspan="2" bgcolor="crimson"><font color="white">고려</font></td>
+          <td colspan="2" bgcolor="crimson"><font color="white">고려</font></td>
+          <td colspan="2" bgcolor="crimson"><font color="white">고려</font></td>
+          <td colspan="2" bgcolor="royalblue"><font color="white">연세</font></td>
+          <td colspan="2" bgcolor="royalblue"><font color="white">연세</font></td>
+          <td colspan="3" bgcolor="crimson"><font color="white">고려</font></td>
           <td>무승부</td>
           </tr>
           </tbody></table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>경기가 끝난 뒤의 기차놀이</h4><br>
+        <p>
+          고연전이 끝나고 나면 고연전 뒤풀이 문화인 기차놀이가 진행된다. 
+          기차놀이란 학생들이 일렬로 줄을 서서 학교 주변 음식점에서 무료로 술이나 안주를 제공받는 놀이다. 짝수 해는 고려대학교 주최이므로 안암동 참살이길에서, 홀수 해는 연세대학교 주최이므로 신촌 명물거리에서 뒤풀이를 한다. 
+          학교 응원단 주도 하에 길거리에서 학생들이 단체로 응원을 하는 모습도 볼 수 있다.
+        </p>
       </div>
     </div>
   </div>
