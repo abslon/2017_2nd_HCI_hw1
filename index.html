@@ -42,14 +42,9 @@
   var curWidth = parseInt(mainImg.clientWidth);
   var curHeight = (720 * curWidth / 1920);
   mainImg.style.height = curHeight+"px";
-  alert(curWidth);
-  alert(curHeight);
   mainImg.style.backgroundSize = (2770 / 1920 * curWidth)+"px "+curHeight+"px";
-  alert((2770 / 1920 * curWidth)+"px"+" "+curHeight+"px");
   mainImg.style.padding = (100 / 720 * curHeight)+"px "+(65 / 1920 * curWidth)+"px "
       +(385 / 720 * curHeight)+"px "+ (65 / 1920 * curWidth)+"px";
-  alert(mainImg.style.padding);
-
   var main1 = document.getElementById("m1");
   main1.style.fontSize = (115 / 1920 * curWidth) + "px";
   var main2 = document.getElementById("m2");
@@ -59,15 +54,15 @@
 <div style="margin: 0 auto; max-width:1350px;">
   <div id="about" class="container-fluid">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-4">
+        <img style="width: 100%; height:100%; padding-top:45px" src="res/logo.png"></img>
+      </div>
+      <div class="col-sm-8" style="text-align: right">
         <h2>고려대&#8226연세대 정기전이란?</h2><br>
         <h4>1965년부터 시작된 역사와 전통을 가지는 행사</h4><br>
         <p style="font-size:17px">이번년에 실시되는 2017 정기 고려대.연세대 정기전은 애교심을 고양하고 연세대학교와 고려대학교 양교의 친선을 도모하기 위한 목적으로
                 스포츠 경기를 비롯한 강연, 온라인 게임, 사회공헌활동과 같은 다양한 분야에서 승부를 겨루는 행사입니다.</p>
         <br><button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c1">더 알아보기</button>
-      </div>
-      <div class="col-sm-4">
-        <img style="width: 100%; height:100%; padding-top:45px" src="res/logo.png"></img>
       </div>
       <div id="c1" class="col-sm-12 collapse">
         <br>
@@ -222,17 +217,34 @@
       </div>
       <div id="c2" class="col-sm-12 collapse">
         <br>
-        <p style="font-size: 30px;">현재 경기 : 없음 <button class="btn btn-default" style="font-family:none" onclick="document.getElementById('time').innerHTML = Date()">
+        <p id="sc1">현재 경기 : 없음 <button class="btn btn-default" style="font-family:none" onclick="document.getElementById('time').innerHTML = Date()">
             <span class="glyphicon glyphicon-refresh"></span></button></p>
-        <p id="time"style="font-size: 30px;"></p>
-        <p style="font-family: none; font-size: 140px; padding-left:30px">
-          <img src="res/korea.png" style="width: 150px"></img> 
+        <p id="time"></p>
+        <p id="sc2" style="font-family: none;">
+          <img id="scm1" src="res/korea.png"></img> 
           <strong style="color:crimson">0</strong> : <strong style="color:royalblue">0</strong>
-          <img src="res/yonsei.jpg" style="width: 180px; padding-bottom: 20px"></img>
+          <img id="scm2" src="res/yonsei.jpg"></img>
         </p>
         <br>
       </div>
     </div>
+    <script>
+      var cal = document.getElementById("calendar");
+      var curWidth = parseInt(cal.clientWidth);
+      var score1 = document.getElementById("sc1");
+      var score2 = document.getElementById("sc2");
+      var t = document.getElementById("time");
+      var scoreimg1 = document.getElementById("scm1");
+      var scoreimg2 = document.getElementById("scm2");
+
+      score1.style.fontSize = (30 * curWidth / 1350) + "px";
+      score2.style.fontSize = (140 * curWidth / 1350) + "px";
+      score2.style.paddingLeft = (30 * curWidth / 1350) + "px";
+      t.style.fontSize = (30 * curWidth / 1350) + "px";
+      scoreimg1.style.width = (150 * curWidth / 1350) + "px";
+      scoreimg2.style.width = (180 * curWidth / 1350) + "px";
+      scoreimg2.style.paddingBottom = (20 * curWidth / 1350) + "px";
+    </script>
     <div class="row">   
       <div id="c3" class="col-sm-12 collapse">
         <br>
