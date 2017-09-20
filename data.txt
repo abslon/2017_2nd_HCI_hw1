@@ -1,0 +1,39 @@
+꼭 해야하는 것
+- Title and logo
+- Menu (on the left or top)
+- Content
+ Information about the upcoming KoYon-Jeon
+필승! 전승! 압승! 올해의 승리도 우리 것이다!
+2017년 정기 고.연전 경기 개최
+ Short introduction
+이번년에 실시되는 2017 정기 고려대.연세대 정기전은 애교심을 고양하고 연세대학교와 고려대학교 양교의 친선을 도모하기 위한 목적으로
+스포츠 경기를 비롯한 강연, 온라인 게임, 사회공헌활동과 같은 다양한 분야에서 승부를 겨루는 행사입니다. 
+ Place and time (this year)
+9/22(금) ~ 9/23(토) (표 참고)
+ Latest score (updatable)
+????
+ How to get to the venue
+찾아오는 길(구글 지도 api)
+ Lyrics for cheering songs – with audios
+응원가 찾아서 넣기
+ Cheering dance for KU – with videos
+응원가 찾아서 넣기
+ Post-game party information
+ History section
+ Total series
+ Baseball
+ Ice Hockey
+ Basketball
+ Rugby
+ Soccer
+ Post cheering words
+
+하면 추가 점수
+- Server based implementation is not necessary but encouraged.
+- Simple animation and cheering music would be nice.
+- Adaptive menu based on the time of day would be nice (e.g. move the “Post game party” info
+to the top and replace with score information)
+- Cultural support (English/Korean conversion)
+- Device adaptation (e.g. for smart phones and pads)
+- Voice activation for the disabled
+- Post or capture of actual usage of your system on the day

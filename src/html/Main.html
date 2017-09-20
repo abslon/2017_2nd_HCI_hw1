@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>고연전 사이트</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <a class="navbar-brand" href="#" style="min-height: 60px; padding-top: 18px; font-size:26px">
+        2017년 고연전</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">고연전 소개</a></li>
+        <li><a href="#calendar">경기 일정</a></li>
+        <li><a href="#song">응원가 듣기</a></li>
+        <li><a href="#send">응원하기</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="mainimg" class="jumbotron text-center" style="height:720px; padding-top: 90px; padding-bottom:70px; padding-right:80px; overflow:auto">
+  <h1 style="font-size:115px; font-weight:100">2017년 정기 고연전</h1> 
+  <p style="font-size:45px; font-weight:100">필승! 전승! 압승! 올해의 승리도 우리 것이다!</p> 
+</div>
+
+
+
+<div style="margin: 0 auto; max-width:1350px;">
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>고려대&#8226연세대 정기전이란?</h2><br>
+        <h4>1965년부터 시작된 역사와 전통을 가지는 행사</h4><br>
+        <p style="font-size:17px">이번년에 실시되는 2017 정기 고려대.연세대 정기전은 애교심을 고양하고 연세대학교와 고려대학교 양교의 친선을 도모하기 위한 목적으로
+                스포츠 경기를 비롯한 강연, 온라인 게임, 사회공헌활동과 같은 다양한 분야에서 승부를 겨루는 행사입니다.</p>
+        <br><button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c1">더 알아보기</button>
+      </div>
+      <div class="col-sm-4">
+        <img style="width: 100%; height:100%; padding-top:45px" src="../../res/logo.png"></img>
+      </div>
+      <div id="c1" class="col-sm-12 collapse">
+        <br>
+        <iframe style="width:100%; min-height: 650px;" src="https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%A0%A4%EB%8C%80%ED%95%99%EA%B5%90-%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90_%EC%A0%95%EA%B8%B0%EC%A0%84"></iframe>
+      </div>
+    </div>
+  </div> 
+  <br><br>
+  <div class="container-fluid">
+    <div class="text-center">
+      <h2>경기장 장소</h2>
+      <h4>대회가 진행되는 장소로 찾아오세요</h4>
+    </div>
+    <div class="row slideanim">
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>잠실 야구장</h1>
+          </div>
+          <div id="Map1" class="panel-body" style="min-height:300px;width:100%;">
+          </div>
+          <div class="panel-footer">
+            <h5 style="text-align: center; font-size: 20px;">9/22(금)</h5>
+            <p>9:20 ~ 10:00 방송제</p>
+            <p>10:00 ~ 11:00 개막식</p>
+            <p>11:00 ~ 야구</p>
+          </div>
+        </div>      
+      </div>     
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>잠실 실내 체육관</h1>
+          </div>
+          <div id="Map2" class="panel-body" style="min-height:300px;width:100%;">
+          </div>
+          <div class="panel-footer">
+            <h5 style="text-align: center; font-size: 20px;">9/22(금)</h5>
+            <p>12:00 ~ 15:00 아마추어 농구</p>
+            <p>15:00 ~ 농구</p>
+          </div>
+        </div>      
+      </div>       
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>목동 아이스링크장</h1>
+          </div>
+          <div id="Map3" class="panel-body" style="min-height:300px;width:100%;">
+          </div>
+          <div class="panel-footer">
+            <h5 style="text-align: center; font-size: 20px;">9/22(금)</h5>
+            <p>13:00 ~ 17:00 아마추어 아이스하키</p>
+            <p>17:00 ~ 아이스하키</p>
+          </div>
+        </div>      
+      </div>
+      <div class="col-sm-3 col-xs-12">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>목동 주 경기장</h1>
+          </div>
+          <div id="Map4" class="panel-body" style="min-height:300px;width:100%;">
+          </div>
+          <div class="panel-footer">
+            <h5 style="text-align: center; font-size: 20px;">9/23(토)</h5>
+            <p>7:00 ~ 9:00 아마추어 축구</p>
+            <p>9:00 ~ 11:00 아마추어 럭비</p>
+            <p>11:00 ~ 13:00 럭비</p>
+            <p>13:00 ~ 13:30 방송제</p>
+            <p>13:30 ~ 15:30 축구</p> 
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <script>
+    function myMap()
+    {
+      var Center1 = new google.maps.LatLng(37.5123898,127.0707907);
+      var Center2 = new google.maps.LatLng(37.512045, 127.071740);
+      var Center3 = new google.maps.LatLng(37.5306516,126.8790719);
+      var Center4 = new google.maps.LatLng(37.5306067,126.8824571);
+      var mapProp = {zoom:15, mapTypeId:google.maps.MapTypeId.ROADMAP};
+
+      mapProp.center = Center1;
+      var map1 = new google.maps.Map(document.getElementById("Map1"),mapProp);
+      mapProp.center = Center2;
+      var map2 = new google.maps.Map(document.getElementById("Map2"),mapProp);
+      mapProp.center = Center3;
+      var map3 = new google.maps.Map(document.getElementById("Map3"),mapProp);
+      mapProp.center = Center4;
+      var map4 = new google.maps.Map(document.getElementById("Map4"),mapProp);
+
+      var marker1 = new google.maps.Marker({position:Center1});
+      var marker2 = new google.maps.Marker({position:Center2});
+      var marker3 = new google.maps.Marker({position:Center3});
+      var marker4 = new google.maps.Marker({position:Center4});
+      marker1.setMap(map1);
+      marker2.setMap(map2);
+      marker3.setMap(map3);
+      marker4.setMap(map4);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNKxamK4HLYm7HmRaHb3mNY2TnBJp92L0&callback=myMap"></script>
+  
+  <div id="calendar" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <h2>고려대&#8226연세대 정기전 일정</h2>
+        <h4>9/22(금)~9/23(토)</h4><br>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th class="th1">종목</th>
+              <th class="th1">일정</th>
+              <th class="th1">장소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>야구</td>
+              <td>9/22(금) 11:00</td>
+              <td>잠실 야구장</td>
+            </tr>
+            <tr>
+              <td>농구</td>
+              <td>9/22(금) 15:00</td>
+              <td>잠실 실내체육관</td>
+            </tr>
+            <tr>
+              <td>빙구</td>
+              <td>9/22(금) 17:00</td>
+              <td>목동 아이스링크장</td>
+            </tr>
+            <tr>
+              <td>럭비</td>
+              <td>9/23(금) 11:00</td>
+              <td>목동 주경기장</td>
+            </tr>
+            <tr>
+              <td>축구</td>
+              <td>9/23(금) 13:30</td>
+              <td>목동 주경기장</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:17px;">일정을 확인하시고 적극 참여하시어 고대인으로서의 자부심을 확인하시기 바랍니다.</p>
+        <br><button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c2">현재 스코어 보기</button> 
+        <button class="btn btn-default btn-lg" data-toggle="collapse" data-target="#c3">지난 전적 보기</button>
+      </div>
+    </div>
+
+    <div id="c2" class="col-sm-12 collapse">
+      <br>
+      <p style="font-size: 30px;">현재 경기 : 없음 <button class="btn btn-default" style="font-family:none" onclick="document.getElementById('time').innerHTML = Date()">
+          <span class="glyphicon glyphicon-refresh"></span></button></p>
+      <p id="time"style="font-size: 30px;"></p>
+      <p style="font-family: none; font-size: 140px; padding-left:30px">
+        <img src="../../res/korea.png" style="width: 150px"></img> 
+        <strong style="color:crimson">0</strong> : <strong style="color:royalblue">0</strong>
+        <img src="../../res/yonsei.jpg" style="width: 180px; padding-bottom: 20px"></img>
+      </p>
+      <br>
+    </div>
+    
+    <div id="c3" class="col-sm-12 collapse" style="margin:auto; float:none">
+      <br>
+      <table class="table table-hover" style="text-align:center;">
+        <tbody><tr>
+        <th rowspan="2">연도</th>
+        <th colspan="2">축구 스코어</th>
+        <th colspan="2">농구 스코어</th>
+        <th colspan="2">야구 스코어</th>
+        <th colspan="2">빙구 스코어</th>
+        <th colspan="2">럭비 스코어</th>
+        <th colspan="3">종합 전적</th>
+        <th rowspan="2">승리팀</th>
+        </tr>
+        <tr>
+        <td>고려</td>
+        <td>연세</td>
+        <td>고려</td>
+        <td>연세</td>
+        <td>고려</td>
+        <td>연세</td>
+        <td>고려</td>
+        <td>연세</td>
+        <td>고려</td>
+        <td>연세</td>
+        <td>고려</td>
+        <td><small>무승부</small></td>
+        <td>연세</td>
+        </tr>
+        <tr>
+        <td>1965</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">89</font></td>
+        <td bgcolor="crimson"><font color="white">84</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td>4</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">11</font></td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1966</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">91</font></td>
+        <td bgcolor="royalblue"><font color="white">105</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td>6</td>
+        <td>6</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>1967</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">87</font></td>
+        <td bgcolor="crimson"><font color="white">83</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td>4</td>
+        <td>1</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1968</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">87</font></td>
+        <td bgcolor="crimson"><font color="white">76</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">7</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">16</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td>4</td>
+        <td>1</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1969</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td>64</td>
+        <td>64</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>1970</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">71</font></td>
+        <td bgcolor="royalblue"><font color="white">79</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">9</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="royalblue"><font color="white">8</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>1971</td>
+        <td rowspan="2" colspan="14" bgcolor="white">학원사태로 무산</td>
+        </tr>
+        <tr>
+        <td>1972</td>
+        </tr>
+        <tr>
+        <td>1973</td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">62</font></td>
+        <td bgcolor="royalblue"><font color="white">64</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">13</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td>4</td>
+        <td>0</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1974</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">87</font></td>
+        <td bgcolor="crimson"><font color="white">83</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">16</font></td>
+        <td bgcolor="crimson"><font color="white">12</font></td>
+        <td>4</td>
+        <td>1</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1975</td>
+        <td colspan="10" bgcolor="white"><a href="/wiki/%EA%B3%A0%EB%A0%A4%EB%8C%80%ED%95%99%EA%B5%90_%EC%B6%95%EA%B5%AC%EB%B6%80" title="고려대학교 축구부">고려대학교 축구부</a> <a href="/wiki/%EC%A7%84%ED%95%B4" class="mw-disambig" title="진해">진해</a>에서 버스 사고로 무산 (야구는 무승부 기록)</td>
+        <td>-</td>
+        <td>1</td>
+        <td>-</td>
+        <td>-</td>
+        </tr>
+        <tr>
+        <td>1976</td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">67</font></td>
+        <td bgcolor="royalblue"><font color="white">90</font></td>
+        <td>3</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">9</font></td>
+        <td>6</td>
+        <td>6</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1977</td>
+        <td>0</td>
+        <td>0</td>
+        <td>86</td>
+        <td>86</td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">7</font></td>
+        <td bgcolor="royalblue"><font color="white">8</font></td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1978</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">70</font></td>
+        <td bgcolor="royalblue"><font color="white">72</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">10</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1979</td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td>80</td>
+        <td>80</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">39</font></td>
+        <td bgcolor="crimson"><font color="white">16</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>1980</td>
+        <td colspan="14" bgcolor="white">학원사태로 무산</td>
+        </tr>
+        <tr>
+        <td>1981</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">77</font></td>
+        <td bgcolor="crimson"><font color="white">76</font></td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="royalblue"><font color="white">12</font></td>
+        <td bgcolor="royalblue"><font color="white">14</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1982</td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">80</font></td>
+        <td bgcolor="royalblue"><font color="white">81</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">16</font></td>
+        <td bgcolor="royalblue"><font color="white">21</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1983</td>
+        <td colspan="14" bgcolor="white">무산 (양교 총장 성명서 발표)</td>
+        </tr>
+        <tr>
+        <td>1984</td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">57</font></td>
+        <td bgcolor="crimson"><font color="white">51</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">7</font></td>
+        <td bgcolor="royalblue"><font color="white">12</font></td>
+        <td bgcolor="royalblue"><font color="white">22</font></td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1985</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">61</font></td>
+        <td bgcolor="royalblue"><font color="white">65</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">11</font></td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">19</font></td>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1986</td>
+        <td>0</td>
+        <td>0</td>
+        <td colspan="2">무(25:21)</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1987</td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">67</font></td>
+        <td bgcolor="crimson"><font color="white">64</font></td>
+        <td bgcolor="crimson"><font color="white">11</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">25</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1988</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">57</font></td>
+        <td bgcolor="royalblue"><font color="white">69</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">10</font></td>
+        <td bgcolor="royalblue"><font color="white">16</font></td>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1989</td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">69</font></td>
+        <td bgcolor="royalblue"><font color="white">78</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">8</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">21</font></td>
+        <td bgcolor="crimson"><font color="white">18</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1990</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">58</font></td>
+        <td bgcolor="royalblue"><font color="white">74</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">21</font></td>
+        <td bgcolor="crimson"><font color="white">7</font></td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1991</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">57</font></td>
+        <td bgcolor="royalblue"><font color="white">69</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">12</font></td>
+        <td bgcolor="royalblue"><font color="white">21</font></td>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1992</td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">65</font></td>
+        <td bgcolor="royalblue"><font color="white">67</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">8</font></td>
+        <td bgcolor="crimson"><font color="white">17</font></td>
+        <td bgcolor="crimson"><font color="white">11</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1993</td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">60</font></td>
+        <td bgcolor="royalblue"><font color="white">71</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">7</font></td>
+        <td bgcolor="royalblue"><font color="white">23</font></td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1994</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">73</font></td>
+        <td bgcolor="crimson"><font color="white">59</font></td>
+        <td bgcolor="crimson"><font color="white">7</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td>10</td>
+        <td>10</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1995</td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">92</font></td>
+        <td bgcolor="crimson"><font color="white">87</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td bgcolor="royalblue"><font color="white">9</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">15</font></td>
+        <td bgcolor="crimson"><font color="white">13</font></td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>1996</td>
+        <td colspan="14" bgcolor="white"><a href="/wiki/%EC%97%B0%EC%84%B8%EB%8C%80_%EC%82%AC%ED%83%9C" title="연세대 사태">연세대학교 한총련 사태</a>로 무산</td>
+        </tr>
+        <tr>
+        <td>1997</td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">62</font></td>
+        <td bgcolor="royalblue"><font color="white">68</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">9</font></td>
+        <td bgcolor="royalblue"><font color="white">18</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1998</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">61</font></td>
+        <td bgcolor="crimson"><font color="white">58</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="royalblue"><font color="white">23</font></td>
+        <td bgcolor="royalblue"><font color="white">27</font></td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>1999</td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">69</font></td>
+        <td bgcolor="royalblue"><font color="white">72</font></td>
+        <td>3</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td colspan="2">취소 (무승부)</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>2000</td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">61</font></td>
+        <td bgcolor="crimson"><font color="white">54</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">10</font></td>
+        <td bgcolor="royalblue"><font color="white">22</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2001</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">98</font></td>
+        <td bgcolor="crimson"><font color="white">84</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">9</font></td>
+        <td>3</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">20</font></td>
+        <td bgcolor="royalblue"><font color="white">26</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>2002</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">70</font></td>
+        <td bgcolor="royalblue"><font color="white">73</font></td>
+        <td bgcolor="crimson"><font color="white">8</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td>3</td>
+        <td>3</td>
+        <td bgcolor="crimson"><font color="white">30</font></td>
+        <td bgcolor="crimson"><font color="white">24</font></td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2003</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="royalblue"><font color="white">65</font></td>
+        <td bgcolor="royalblue"><font color="white">80</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">19</font></td>
+        <td bgcolor="crimson"><font color="white">18</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2004</td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">74</font></td>
+        <td bgcolor="royalblue"><font color="white">88</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">19</font></td>
+        <td bgcolor="crimson"><font color="white">16</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2005</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">76</font></td>
+        <td bgcolor="crimson"><font color="white">75</font></td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">14</font></td>
+        <td bgcolor="royalblue"><font color="white">21</font></td>
+        <td>1</td>
+        <td>0</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>2006</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">66</font></td>
+        <td bgcolor="crimson"><font color="white">53</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">6</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">27</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2007</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">90</font></td>
+        <td bgcolor="crimson"><font color="white">75</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td colspan="2" bgcolor="white">열리지 않음</td>
+        <td bgcolor="crimson"><font color="white">30</font></td>
+        <td bgcolor="crimson"><font color="white">22</font></td>
+        <td>3</td>
+        <td>1</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2008</td>
+        <td bgcolor="royalblue"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">74</font></td>
+        <td bgcolor="crimson"><font color="white">72</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">9</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="royalblue"><font color="white">21</font></td>
+        <td bgcolor="royalblue"><font color="white">27</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>2009</td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">58</font></td>
+        <td bgcolor="royalblue"><font color="white">74</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td>18</td>
+        <td>18</td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2010</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="royalblue"><font color="white">65</font></td>
+        <td bgcolor="royalblue"><font color="white">74</font></td>
+        <td>4</td>
+        <td>4</td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">8</font></td>
+        <td bgcolor="royalblue"><font color="white">20</font></td>
+        <td bgcolor="royalblue"><font color="white">38</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">연세대학교</font></td>
+        </tr>
+        <tr>
+        <td>2011</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">67</font></td>
+        <td bgcolor="crimson"><font color="white">61</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">8</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2012</td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">74</font></td>
+        <td bgcolor="crimson"><font color="white">60</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">13</font></td>
+        <td bgcolor="royalblue"><font color="white">15</font></td>
+        <td>3</td>
+        <td>0</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2013</td>
+        <td bgcolor="royalblue"><font color="white">2</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">75</font></td>
+        <td bgcolor="crimson"><font color="white">62</font></td>
+        <td bgcolor="royalblue"><font color="white">1</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td>2</td>
+        <td>2</td>
+        <td bgcolor="crimson"><font color="white">20</font></td>
+        <td bgcolor="crimson"><font color="white">17</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2014</td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">0</font></td>
+        <td bgcolor="crimson"><font color="white">61</font></td>
+        <td bgcolor="crimson"><font color="white">58</font></td>
+        <td bgcolor="crimson"><font color="white">6</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">2</font></td>
+        <td bgcolor="crimson"><font color="white">33</font></td>
+        <td bgcolor="crimson"><font color="white">23</font></td>
+        <td>5</td>
+        <td>0</td>
+        <td>0</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <td>2015</td>
+        <td>1</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">85</font></td>
+        <td bgcolor="crimson"><font color="white">74</font></td>
+        <td bgcolor="crimson"><font color="white">7</font></td>
+        <td bgcolor="crimson"><font color="white">5</font></td>
+        <td bgcolor="royalblue"><font color="white">3</font></td>
+        <td bgcolor="royalblue"><font color="white">4</font></td>
+        <td bgcolor="royalblue"><font color="white">21</font></td>
+        <td bgcolor="royalblue"><font color="white">24</font></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>무승부</td>
+        </tr>
+        <tr>
+        <td>2016</td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td bgcolor="crimson"><font color="white">1</font></td>
+        <td>71</td>
+        <td>71</td>
+        <td bgcolor="crimson"><font color="white">4</font></td>
+        <td bgcolor="crimson"><font color="white">3</font></td>
+        <td>3</td>
+        <td>3</td>
+        <td bgcolor="royalblue"><font color="white">26</font></td>
+        <td bgcolor="royalblue"><font color="white">27</font></td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td bgcolor="crimson"><font color="white">고려대학교</font></td>
+        </tr>
+        <tr>
+        <th></th>
+        <th colspan="2">20고 12무 14연</th>
+        <th colspan="2">21고 5무 20연</th>
+        <th colspan="2">25고 6무 15연</th>
+        <th colspan="2">15고 10무 21연</th>
+        <th colspan="2">19고 4무 23연</th>
+        <th>100고</th>
+        <th>37무</th>
+        <th>93연</th>
+        <th>18고 10무 18연</th>
+        </tr>
+        <tr>
+        <td><b>우세</b></td>
+        <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
+        <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
+        <td colspan="2" bgcolor="crimson"><font color="white">고려 우세</font></td>
+        <td colspan="2" bgcolor="royalblue"><font color="white">연세 우세</font></td>
+        <td colspan="2" bgcolor="royalblue"><font color="white">연세 우세</font></td>
+        <td colspan="3" bgcolor="crimson"><font color="white">고려 우세</font></td>
+        <td>무승부</td>
+        </tr>
+        </tbody></table>
+    </div>
+  </div>
+      
+  <h2 id="song" style="text-align: center">응원 영상들</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="songCarousel" class="carousel slide text-center" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#songCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#songCarousel" data-slide-to="1"></li>
+          <li data-target="#songCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+           <iframe id="v1" width="100%" src="https://www.youtube.com/embed/gf2_SVxbogU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe id="v2" width="100%" src="https://www.youtube.com/embed/5sJfktWGQ2w" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe id="v3" width="100%" src="https://www.youtube.com/embed/yLGSgxA6tTM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#songCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#songCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var vid1 = document.getElementById("v1");
+    vid1.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+    var vid2 = document.getElementById("v2");
+    vid2.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+    var vid3 = document.getElementById("v3");
+    vid3.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+  </script>
+  
+  <h2 style="text-align: center">응원 곡들</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="songCarousel" class="carousel slide text-center" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#songCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#songCarousel" data-slide-to="1"></li>
+          <li data-target="#songCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+           <iframe id="v4" width="100%" src="https://www.youtube.com/embed/gf2_SVxbogU" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe id="v5" width="100%" src="https://www.youtube.com/embed/5sJfktWGQ2w" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe id="v6" width="100%" src="https://www.youtube.com/embed/yLGSgxA6tTM" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#songCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#songCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var vid4 = document.getElementById("v4");
+    vid4.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+    var vid5 = document.getElementById("v5");
+    vid5.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+    var vid6 = document.getElementById("v6");
+    vid6.height = (parseInt(vid1.clientWidth)*9/16) + "px";
+  </script>
+
+  <div id="send" class="container-fluid">
+    <h3 class="text-center">응원의 한 마디 남기기</h3>
+    <p class="text-center"><em>여러분의 응원으로 힘을 넣어주세요!</em></p>
+    <div class="row">
+      <div class="col-md-4" style="text-align: center">
+        <img src="../../res/img1.png" style="width:220px; height: 220px;"></img>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="password" name="password" placeholder="Password" type="password" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" data-toggle="modal" data-target="#myModal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">전송 완료!</h4>
+        </div>
+        <div class="modal-body">
+          <p>응원의 한마디를 전송하였습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center" style="max-width: none">
+  <p>2015410009 조준엽 HCI 1차과제</p>
+</footer>
+
+</body>
+</html>

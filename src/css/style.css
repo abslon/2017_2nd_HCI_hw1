@@ -1,0 +1,120 @@
+	
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+body 
+{
+    font-family: "Hanna", serif;
+    margin-top: 60px;
+}
+
+h2 
+{
+    font-size: 37px;
+    color: #303030;
+    margin-bottom: 25px;
+}
+
+h4 
+{
+    font-size: 27px;
+    line-height: 1.375em;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.th1
+{
+    font-size : 20px;
+    color : #222;
+    background-color: rgba(135, 36, 52, 0.65);
+    text-align: center;
+}
+
+th
+{
+    font-size : 18px;
+    color : #222;
+}
+
+td
+{
+    font-size : 15px;
+    color : #555;
+}
+
+
+.jumbotron
+{
+    background-position: center center; 
+    background-size: 2770px 720px;
+    background-image: url("http://korea.ac.kr/user/university/upload/mainImage/egovtemp_201706070534575100.jpg");
+    color: #000;
+    padding: 200px 25px;
+}
+
+.carousel
+{
+    margin: auto;
+}
+
+.navbar 
+{
+    margin-bottom: 0px;
+    min-height: 60px;
+    background-color: #872434;
+    border-color: #872434;
+    border-radius: 0px;
+}
+
+.navbar-nav>li>a
+{
+    padding-top:18px;
+}
+
+.navbar-fixed-top
+{
+    border-width: 0px; 
+}
+
+li
+{
+    height: 60px;
+}
+
+li a
+{
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.row.content 
+{
+    height: 450px
+}
+.sidenav 
+{
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.modal-title
+{
+    font-size: 30px;
+}
+
+.modal-body
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+footer 
+{
+    background-color: #777;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+}
