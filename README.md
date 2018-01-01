@@ -1,3 +1,5 @@
-# hw1
+# HCI hw1 html page
 
 2017 2nd HCI homework html page.
+https://abslon.github.io/hw1/
+
